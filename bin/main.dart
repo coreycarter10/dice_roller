@@ -33,7 +33,7 @@ void main() {
 int rollDie(int sides) => random.nextInt(sides) + 1;
 
 RollResult rollDice(DiceExpression exp) {
-  List<int> rolls = [];
+  final List<int> rolls = [];
 
   for (int i = 0; i < exp.qty; i++) {
     rolls.add(rollDie(exp.sides));
